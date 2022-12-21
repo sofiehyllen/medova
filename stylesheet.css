@@ -1,0 +1,507 @@
+/*----------GENERELLE REGLER----------*/
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+/*----------Tekstfarve til hele websitet----------*/
+html{
+    color: #484848;
+}
+/*----------Baggrundsfarve til hele websitet, med undtagelse af den responsive menu----------*/
+.baggrundsfarve{
+    background-color: #ededed;
+}
+
+/*----------Klasse til alle mine billeder. 
+På nogen billeder har den ikke virket og jeg har istedet benyttet childselector----------*/
+.max-size{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*----------Tilmeldingsfelt til nyhedsbrev----------*/
+.tilmelding input{
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 10px;
+    margin: 3% 3%;
+    border: none;
+    outline: none;
+    background-color: white;
+    font-family: bree,sans-serif;
+  }
+
+/*----------Tilmeldingsknap til nyhedsbrev----------*/
+.knap {
+    background-color: #484848;
+    color: #ededed;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding: 3px 11px;
+    cursor: pointer;
+    font-family: bree,sans-serif;
+    font-size: 13px;
+    margin-left: 3%;
+}
+.knap:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+
+
+
+/*----------Blå "Nyhed" titel----------*/
+.nyhed p{
+    font-family: bree,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #091eb8;
+    font-size: 300%;
+    text-decoration: underline;
+    z-index: 1;
+}
+
+/*----------Layoutklasser brugt på jul.html og konkurrence.html----------*/
+.maincontent{
+    font-family: bree-serif,serif;
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    margin: 5% 11% 5% 11%;
+}
+.maincontent-titel p{
+    margin-bottom: 5%;
+    font-size: 120%;
+}
+.maincontent-titel h1{
+    font-family: bree,sans-serif;
+    font-size: 350%;
+    font-weight: 100;
+    padding-bottom: 5%;
+}
+.maincontent-titel span{
+    font-family: cubano,sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------FORSIDE----------*/
+#forside{
+    background-image: url("images/baggrund.index.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 710px;
+    margin-bottom: 3%;
+}
+
+/*----------Tekst----------*/
+#forside-slogan {
+    font-size: 580%;
+    font-style: normal;
+    font-weight: 200;
+    font-family: bree-serif,serif;
+    text-align: left;
+}
+#forside-slogan div:last-child{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#forside-slogan span{
+    font-style: italic;
+}
+
+/*----------"Læs mere" knap----------*/
+#forside-knap{
+    color: #ededed;    
+    background-color: #484848;
+    font-family: bree,sans-serif;
+    font-size: 20%;
+    text-align: center;
+    border-radius: 30px;
+    border: none;
+    outline: none; 
+    width: 120px;
+    padding: 4px 19px 6px 19px;
+    margin-top: 15%;
+    display: block;
+}
+#forside-knap:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+
+/*----------Teposebillede----------*/
+#tepose-forside{
+    height: 680px;
+    width: 450px;
+    float: right;
+    margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------VARIANTER----------*/
+/*----------Titel----------*/
+.variant-titel{
+    font-family: bree,sans-serif;
+    font-style: normal;
+    text-align: center;
+    margin-top: 6%;
+    font-size: 130%;
+}
+/*-Jeg har med de brugte fonts somme tider været nødsaget til at være helt specifik med font-weight, 
+da den ellers ikke ville "høre efter"*/
+.variant-titel h2{
+    font-weight: 100;
+}
+.variant-titel h1{
+    font-style: italic;
+    font-size: 250%;
+    font-weight: 100;
+}
+.variant-titel span{
+    font-family: cubano,sans-serif;
+    font-style: normal;
+}
+
+
+
+
+
+/*----------Produkterne----------*/
+.variant-produkt{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.variant-produkt div{
+    text-align: center;
+}
+
+
+
+
+
+/*----------Teposebilleder----------*/
+.variant-produkt img:hover{
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+}
+.variant-tepose-img{
+    height: 800px;
+    width: auto;
+    object-fit: contain;
+    margin: 4% 2% 0 2%;
+}
+.variant-tepose-img img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+
+
+/*----------Teksten under billederne----------*/
+.variant-tekst{  
+    font-family: bree-serif,serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 130%;
+    padding: 0% 15% 20% 15%;
+}
+.variant-tekst h3{
+    font-family: bree,sans-serif;
+    font-size: 220%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------PRODUKTER----------*/
+.produkter{
+    display: flex;
+    font-family: bree-serif,serif;
+    font-style: normal;
+    font-weight: 100;
+    margin: 7% 11% 7% 11%;    
+}
+.produktbillede{
+    height: auto;
+}
+#produktinfo-rød{
+    padding-top: 29%;
+}
+#produktinfo-blå{
+    padding-top: 21%;
+}
+
+
+
+
+
+/*---------- Tekst til produkterne----------*/
+.produkttitel{
+    margin-bottom: 20%;
+}
+.produkttitel h4{
+    font-family: cubano,sans-serif;
+    font-size: 450%;
+}
+.produkttitel h5{
+    font-family: bree,sans-serif;
+    font-size: 280%;
+}
+.produkttitel h6{
+    font-style: italic;
+    font-size: 140%;
+    padding: 15% 0 7% 0;
+    font-weight: 100;
+}
+.produktbeskrivelse{
+    font-size: 110%;
+}
+
+
+
+
+
+/*----------Tabel til næringsindhold----------*/
+.tabel{
+    border: 1px solid #484848;
+    font-family: bree,sans-serif;
+    font-size: 150%;
+    margin-top: 10%;
+}
+.tabelhoved{
+    border-bottom: 1px solid #484848;
+    font-size: 110%;
+    display: flex;
+}
+.tabelenergi{
+    border-left: 1px solid #484848;
+    padding: 10px;
+}
+.tabelgram{
+    padding: 10px;
+}
+.tabelingredienser h6{
+    padding: 10px;
+}
+.tabel p{
+    font-family: bree-serif,serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 67.5%;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------KONKURRENCE----------*/
+.konkurrence-tilmelding{
+    margin: 6% 15% 15% 15%;
+    display: flex;
+    text-align: center;
+    width: auto;
+}
+.konkurrence-udfyld{
+    padding-top: 8%;
+    width: 50%;
+    text-align: center;
+}
+
+
+
+
+
+/*----------Tekop billede----------*/
+#tekop-img{
+    height: 350px;
+    margin-right: 3%;
+}
+
+
+
+
+
+/*----------Checkboxen til at acceptere betingelserne----------*/
+#checkbox{
+    display: flex;
+    font-family: bree,sans-serif;
+    font-size: 15px;
+    padding-top: 4%;
+    padding-left: 10%;
+    margin-bottom: 10%;
+}
+#checkbox p{
+    padding-left: 10px;
+}
+#checkbox a{
+    color: #484848;
+    text-decoration: underline;
+    padding-left: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------JUL MED MEDOVA----------*/
+.opskrift{
+    display: flex;
+    font-size: 120%;
+}
+.opskrift h1, .vejledning h1{
+    font-family: bree,sans-serif;
+    font-size: 170%;
+    font-weight: 100;
+}
+
+
+/*----------Billede af julekugle----------*/
+#julekugle-img{
+    height: 380px;
+    width: 55%;
+    margin-top: 7%;
+}
+
+
+/*----------Listen med ingredienser----------*/
+.ingredienser{
+    width: 45%;
+    text-align: left;
+    margin-right: 10%;
+}
+#ingredienser-liste{
+    margin: 3% 0 8% 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+#ingredienser-liste th{
+    font-family: bree,serif;
+    padding-left: 1%;
+}
+#ingredienser-liste td{
+    padding: 2% 0 2% 1%;
+}
+#ingredienser-liste tr:nth-child(even){
+    background-color: #d3d3d3;
+}
+
+
+
+
+
+/*----------Vejledning til opskriften----------*/
+.vejledning{
+    text-align: left;
+    margin-left: 8%;
+    margin-top: 8%;
+}
+.vejledning p{
+    font-size: 120%;
+}
+.vejledning-trin{
+    margin-left: 8%;
+}
+.vejledning-trin span{
+    font-family: bree,sans-serif;
+    color: #091eb8;
+    font-size: 230%;
+}
+
+
+
+
+
+
+
