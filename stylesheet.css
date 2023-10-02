@@ -111,8 +111,8 @@ På nogen billeder har den ikke virket og jeg har istedet benyttet childselector
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 710px;
-    margin-bottom: 3%;
+    contain: content;
+    padding-top: 5%;
 }
 
 /*----------Tekst----------*/
@@ -120,8 +120,9 @@ På nogen billeder har den ikke virket og jeg har istedet benyttet childselector
     font-size: 580%;
     font-style: normal;
     font-weight: 200;
-    font-family: bree-serif,serif;
+    font-family: bree-serif, serif;
     text-align: left;
+    padding-left: 9%;
 }
 #forside-slogan div:last-child{
     display: block;
@@ -155,10 +156,10 @@ På nogen billeder har den ikke virket og jeg har istedet benyttet childselector
 
 /*----------Teposebillede----------*/
 #tepose-forside{
-    height: 680px;
-    width: 450px;
+    height: 750px;
     float: right;
-    margin-top: 5%;
+    margin-top: 3%;
+    margin-right: 5%;
 }
 
 
@@ -228,6 +229,7 @@ da den ellers ikke ville "høre efter"*/
     transition: all .2s ease-in-out;
 }
 .variant-tepose-img{
+    position: relative;
     height: 800px;
     width: auto;
     object-fit: contain;
@@ -284,6 +286,7 @@ da den ellers ikke ville "høre efter"*/
 }
 .produktbillede{
     height: auto;
+    position: relative;
 }
 #produktinfo-rød{
     padding-top: 29%;
@@ -373,14 +376,14 @@ da den ellers ikke ville "høre efter"*/
 
 /*----------KONKURRENCE----------*/
 .konkurrence-tilmelding{
-    margin: 6% 15% 15% 15%;
     display: flex;
-    text-align: center;
-    width: auto;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10%;
 }
 .konkurrence-udfyld{
     padding-top: 8%;
-    width: 50%;
+    width: 30%;
     text-align: center;
 }
 
@@ -401,11 +404,11 @@ da den ellers ikke ville "høre efter"*/
 /*----------Checkboxen til at acceptere betingelserne----------*/
 #checkbox{
     display: flex;
+    justify-content: center;
     font-family: bree,sans-serif;
     font-size: 15px;
     padding-top: 4%;
-    padding-left: 10%;
-    margin-bottom: 10%;
+    padding-bottom: 5%;
 }
 #checkbox p{
     padding-left: 10px;

@@ -127,10 +127,12 @@ footer{
   font-family: bree,sans-serif;  
   font-size: 110%;
   background-image: url(images/footer.jpg);
+  background-size: cover;
   display: flex;
   justify-content: space-between;
   height: fit-content;
   padding: 1%;
+  bottom: 0;
 }
 footer div{
   width: 33%;
@@ -225,14 +227,15 @@ footer hr{
   /*--Placering af nyhedstitel på laptop--*/
   #nyhed-produkt{
     position: absolute;
-    top: 29%;
-    left: 54%;
+    top: 5%;
+    left: 75%;
+    font-size: 400%;
   }
 
   #nyhed-variant{
     position: absolute;
     top: 4%;
-    left: 80%;
+    left: 75%;
   }
 }
 
